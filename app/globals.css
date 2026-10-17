@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-espresso: #1b110b;
+  --color-cream: #faf7f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #1a1a1a;
+  font-family: var(--font-sans);
+}
+
+/* Luxury Dot Matrix Background */
+.bg-dots {
+  background-image: radial-gradient(rgba(180, 150, 120, 0.25) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.bg-dots-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Glass & Glow utilities */
+.glow-warm {
+  box-shadow: 0 20px 60px -15px rgba(34, 21, 14, 0.35);
+}
+
+.glow-subtle {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1b110b;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d271b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
