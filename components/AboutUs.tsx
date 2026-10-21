@@ -118,14 +118,16 @@ export default function AboutUs({ onOpenBooking }: AboutUsProps) {
 
         </div>
 
-        {/* 5-Photo Staggered Wave Collage (Up, Down, Up, Down, Up) matching screenshot */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 items-start pt-4">
+        {/* 5-Photo Staggered Wave Collage (Responsive 2-col on mobile, 3-col on tablet, 5-col on desktop) */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-6 items-start pt-4">
           {photos.map((item, idx) => (
             <div
               key={idx}
-              className={`relative overflow-hidden group shadow-md transition-all duration-500 hover:-translate-y-1.5 bg-neutral-100 ${
+              className={`relative overflow-hidden group shadow-md transition-all duration-500 hover:-translate-y-1.5 bg-neutral-100 rounded-xl sm:rounded-2xl ${
+                idx === 4 ? "col-span-2 sm:col-span-1" : ""
+              } ${
                 item.stagger === "down"
-                  ? "lg:translate-y-12 xl:translate-y-14"
+                  ? "lg:translate-y-10 xl:translate-y-12"
                   : "lg:translate-y-0"
               }`}
             >
