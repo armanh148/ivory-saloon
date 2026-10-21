@@ -60,11 +60,11 @@ export default function BeforeAfter() {
             Real client transformations at Ivory Salon. Clinical consistency, verified results, and bespoke aesthetics.
           </p>
 
-          {/* Tab Selector */}
-          <div className="inline-flex items-center gap-2 mt-8 p-1.5 rounded-full bg-[#22150e] border border-[#3d271b] shadow-inner">
+          {/* Tab Selector (Responsive on mobile) */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 mt-6 sm:mt-8 p-1 sm:p-1.5 rounded-2xl sm:rounded-full bg-[#22150e] border border-[#3d271b] shadow-inner max-w-md sm:max-w-none mx-auto">
             <button
               onClick={() => setActiveTab("hair")}
-              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 ${
+              className={`w-full sm:w-auto px-5 sm:px-6 py-2.5 rounded-xl sm:rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 ${
                 activeTab === "hair"
                   ? "bg-white text-espresso-950 shadow-lg scale-100"
                   : "text-cream-200 hover:text-white"
@@ -74,7 +74,7 @@ export default function BeforeAfter() {
             </button>
             <button
               onClick={() => setActiveTab("skin")}
-              className={`px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-2 ${
+              className={`w-full sm:w-auto px-5 sm:px-6 py-2.5 rounded-xl sm:rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 ${
                 activeTab === "skin"
                   ? "bg-white text-espresso-950 shadow-lg scale-100"
                   : "text-cream-200 hover:text-white"

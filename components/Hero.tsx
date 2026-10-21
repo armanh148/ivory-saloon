@@ -38,17 +38,17 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             </p>
 
             {/* Actions & Rating */}
-            <div className="flex flex-wrap items-center gap-5 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-5 pt-2">
               <button
                 onClick={onOpenBooking}
-                className="bg-white text-espresso-950 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-cream-200 transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95"
+                className="w-full sm:w-auto text-center bg-white text-espresso-950 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-cream-200 transition-all duration-300 shadow-xl hover:shadow-2xl active:scale-95"
               >
                 Schedule Visit
               </button>
               
               <a
                 href="#treatments"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-cream-200 hover:text-white px-6 py-3.5 rounded-full border border-[#3d271b] hover:border-cream-300 transition-colors duration-200"
+                className="w-full sm:w-auto text-center inline-flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-widest text-cream-200 hover:text-white px-6 py-3.5 rounded-full border border-[#3d271b] hover:border-cream-300 transition-colors duration-200"
               >
                 <span>Explore Treatments</span>
                 <ArrowDown className="w-3.5 h-3.5" />
