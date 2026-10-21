@@ -31,27 +31,7 @@ export default function WhyUs() {
 
   return (
     <section className="relative bg-[#FAF7F2] py-24 lg:py-32 overflow-hidden border-b border-neutral-200">
-      
-      {/* Decorative Starburst / Sparkle Ambient SVG Graphics matching screenshot background */}
-      <div className="absolute inset-0 pointer-events-none opacity-25 overflow-hidden">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="sparkle-star">
-              <path
-                d="M12 0 Q12 12 0 12 Q12 12 12 24 Q12 12 24 12 Q12 12 12 0 Z"
-                fill="#b8a798"
-              />
-            </g>
-          </defs>
-          <use href="#sparkle-star" x="18%" y="15%" transform="scale(1.2)" />
-          <use href="#sparkle-star" x="24%" y="22%" transform="scale(0.8)" />
-          <use href="#sparkle-star" x="32%" y="12%" transform="scale(1.4)" />
-          <use href="#sparkle-star" x="38%" y="26%" transform="scale(0.7)" />
-          <use href="#sparkle-star" x="65%" y="75%" transform="scale(1.1)" />
-          <use href="#sparkle-star" x="72%" y="82%" transform="scale(1.5)" />
-          <use href="#sparkle-star" x="80%" y="70%" transform="scale(0.9)" />
-        </svg>
-      </div>
+
 
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 relative z-10">
         

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sparkles, CheckCircle2, ChevronRight, Eye } from "lucide-react";
+import { CheckCircle2, ChevronRight, Eye } from "lucide-react";
 import { IMAGES } from "@/lib/data";
 
 export default function BeforeAfter() {
@@ -49,7 +49,7 @@ export default function BeforeAfter() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#27180f] border border-[#3d271b] text-luxury-gold text-xs font-semibold tracking-widest uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold inline-block" />
             <span>Documented Transformations</span>
           </div>
 

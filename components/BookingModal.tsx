@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X, Sparkles, CheckCircle, Calendar, Clock, Phone, User } from "lucide-react";
+import { X, CheckCircle, Calendar, Clock, Phone, User } from "lucide-react";
 import { TREATMENTS, SITE_INFO } from "@/lib/data";
 
 interface BookingModalProps {
@@ -56,7 +56,7 @@ export default function BookingModal({
         {!submitted ? (
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <Sparkles className="w-4 h-4 text-luxury-gold" />
+              <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold inline-block" />
               <span className="text-xs font-bold uppercase tracking-widest text-neutral-500">
                 VIP Clinical Reservation
               </span>

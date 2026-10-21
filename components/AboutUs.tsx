@@ -37,28 +37,7 @@ export default function AboutUs({ onOpenBooking }: AboutUsProps) {
 
   return (
     <section id="about" className="relative bg-[#FAF7F2] pt-24 pb-32 overflow-hidden border-b border-neutral-200">
-      
-      {/* Decorative Starburst / Sparkle Ambient SVG Cluster in the Center matching screenshot */}
-      <div className="absolute inset-0 pointer-events-none opacity-25 overflow-hidden">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="about-sparkle">
-              <path
-                d="M14 0 Q14 14 0 14 Q14 14 14 28 Q14 14 28 14 Q14 14 14 0 Z"
-                fill="#b8a798"
-              />
-            </g>
-          </defs>
-          <use href="#about-sparkle" x="38%" y="18%" transform="scale(1.2)" />
-          <use href="#about-sparkle" x="44%" y="12%" transform="scale(0.8)" />
-          <use href="#about-sparkle" x="48%" y="22%" transform="scale(1.4)" />
-          <use href="#about-sparkle" x="52%" y="15%" transform="scale(0.9)" />
-          <use href="#about-sparkle" x="42%" y="30%" transform="scale(1.0)" />
-          <use href="#about-sparkle" x="50%" y="34%" transform="scale(0.7)" />
-          <use href="#about-sparkle" x="65%" y="65%" transform="scale(1.1)" />
-          <use href="#about-sparkle" x="85%" y="75%" transform="scale(0.8)" />
-        </svg>
-      </div>
+
 
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 relative z-10">
         

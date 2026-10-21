@@ -1,7 +1,5 @@
 "use client";
 
-import { Sparkles } from "lucide-react";
-
 interface MarqueeStripProps {
   onOpenBooking: () => void;
 }
@@ -29,7 +27,7 @@ export default function MarqueeStrip({ onOpenBooking }: MarqueeStripProps) {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-neutral-800">
               {text}
             </span>
-            <Sparkles className="w-3.5 h-3.5 text-luxury-gold flex-shrink-0" />
+            <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold flex-shrink-0" />
           </div>
         ))}
       </div>

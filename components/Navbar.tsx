@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRight, Menu, X, Sparkles } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -24,8 +24,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
     <header className="sticky top-0 z-50 bg-[#1b110b] text-cream-100 border-b border-[#2d1c13]/60 backdrop-blur-md">
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <Sparkles className="w-5 h-5 text-luxury-gold group-hover:rotate-12 transition-transform duration-300" />
+        <a href="#" className="flex items-center group">
           <span className="font-sans font-extrabold text-2xl tracking-[0.25em] text-cream-50 uppercase">
             IVORY SALON
           </span>

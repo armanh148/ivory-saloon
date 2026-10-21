@@ -9,28 +9,7 @@ interface CallToActionProps {
 export default function CallToAction({ onOpenBooking }: CallToActionProps) {
   return (
     <section className="relative bg-[#FAF7F2] py-28 lg:py-40 overflow-hidden border-t border-neutral-200">
-      
-      {/* Decorative Starburst / Sparkle Ambient SVG Pattern radiating from center */}
-      <div className="absolute inset-0 pointer-events-none opacity-20 overflow-hidden">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <g id="cta-sparkle">
-              <path
-                d="M14 0 Q14 14 0 14 Q14 14 14 28 Q14 14 28 14 Q14 14 14 0 Z"
-                fill="#b8a798"
-              />
-            </g>
-          </defs>
-          <use href="#cta-sparkle" x="35%" y="20%" transform="scale(1.1)" />
-          <use href="#cta-sparkle" x="42%" y="15%" transform="scale(0.8)" />
-          <use href="#cta-sparkle" x="50%" y="12%" transform="scale(1.4)" />
-          <use href="#cta-sparkle" x="58%" y="18%" transform="scale(0.9)" />
-          <use href="#cta-sparkle" x="48%" y="25%" transform="scale(0.7)" />
-          <use href="#cta-sparkle" x="38%" y="58%" transform="scale(0.9)" />
-          <use href="#cta-sparkle" x="52%" y="62%" transform="scale(1.2)" />
-          <use href="#cta-sparkle" x="62%" y="55%" transform="scale(0.8)" />
-        </svg>
-      </div>
+
 
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12 relative">
         

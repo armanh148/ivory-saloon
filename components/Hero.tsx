@@ -1,7 +1,7 @@
 "use client";
 
 import { IMAGES } from "@/lib/data";
-import { ArrowDown, Star, Sparkles } from "lucide-react";
+import { ArrowDown, Star } from "lucide-react";
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -21,7 +21,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
           <div className="lg:col-span-7 flex flex-col justify-center z-10">
             {/* Top pill badge */}
             <div className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-[#2a1b12] border border-[#3d271b] text-xs font-semibold tracking-wider text-cream-200 uppercase mb-8">
-              <Sparkles className="w-3.5 h-3.5 text-luxury-gold" />
+              <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold inline-block" />
               <span>By Anum Zubair — Gulshan Branch, Karachi</span>
             </div>
 

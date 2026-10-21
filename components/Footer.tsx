@@ -1,6 +1,6 @@
 "use client";
 
-import { Sparkles, ArrowUp, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import { ArrowUp, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -16,8 +16,7 @@ export default function Footer() {
           
           {/* Col 1: Brand & Philosophy */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <Sparkles className="w-5 h-5 text-luxury-gold" />
+            <div className="flex items-center mb-6">
               <span className="font-sans font-extrabold text-2xl tracking-[0.25em] text-cream-50 uppercase">
                 IVORY SALON
               </span>
